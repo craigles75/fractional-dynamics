@@ -12,7 +12,8 @@ html {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: white;
+    background: #152235;
     overflow-x: hidden;
 }
 
@@ -27,7 +28,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: #152235;
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 0.5rem 0;
@@ -56,14 +57,14 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
 }
 
 .nav-link:hover {
-    color: #688490;
+    color: #20C4CB;
 }
 
 .nav-link::after {
@@ -73,7 +74,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #688490;
+    background: #20C4CB;
     transition: width 0.3s ease;
 }
 
@@ -91,14 +92,14 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #333;
+    background: white;
     transition: all 0.3s ease;
 }
 
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: #243644;
+    background: #152235;
     color: white;
     min-height: 100vh;
     display: flex;
@@ -162,14 +163,14 @@ body {
 }
 
 .btn-primary {
-    background: #688490;
+    background: #20C4CB;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #5a6f7a;
+    background: #1AAFB5;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(104, 132, 144, 0.3);
+    box-shadow: 0 10px 25px rgba(32, 196, 203, 0.3);
 }
 
 .btn-secondary {
@@ -180,7 +181,7 @@ body {
 
 .btn-secondary:hover {
     background: white;
-    color: #333;
+    color: #152235;
     transform: translateY(-2px);
 }
 
@@ -197,13 +198,13 @@ body {
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
-    color: #333;
+    color: white;
 }
 
 /* Services Section */
 .services {
     padding: 80px 0;
-    background: #ecf0f1;
+    background: transparent;
 }
 
 .services-grid {
@@ -235,7 +236,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #333;
+    color: #152235;
 }
 
 .service-card p {
@@ -246,7 +247,7 @@ body {
 /* About Section */
 .about {
     padding: 80px 0;
-    background: white;
+    background: transparent;
 }
 
 .about-content {
@@ -258,7 +259,7 @@ body {
 
 .about-text p {
     margin-bottom: 1.5rem;
-    color: #666;
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.7;
     font-size: 1.1rem;
 }
@@ -278,12 +279,12 @@ body {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #688490;
+    color: #20C4CB;
     margin-bottom: 0.5rem;
 }
 
 .stat-label {
-    color: #666;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -301,7 +302,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background: #ecf0f1;
+    background: transparent;
 }
 
 .contact-content {
@@ -314,11 +315,11 @@ body {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #333;
+    color: white;
 }
 
 .contact-info p {
-    color: #666;
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 2rem;
     font-size: 1.1rem;
 }
@@ -333,7 +334,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: #666;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .contact-icon {
@@ -343,18 +344,18 @@ body {
 /* Obfuscated Contact Elements */
 .obfuscated-contact {
     cursor: pointer;
-    color: #688490;
+    color: #20C4CB;
     text-decoration: underline;
     transition: color 0.3s ease;
     user-select: none;
 }
 
 .obfuscated-contact:hover {
-    color: #5a6f7a;
+    color: #1AAFB5;
 }
 
 .obfuscated-contact.revealed {
-    color: #333;
+    color: white;
     text-decoration: none;
     cursor: default;
 }
@@ -384,7 +385,7 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #688490;
+    border-color: #20C4CB;
 }
 
 .form-group textarea {
@@ -395,7 +396,7 @@ body {
 /* Client Logos Section */
 .clients {
     padding: 80px 0;
-    background: #f8f9fa;
+    background: transparent;
 }
 
 .client-logos {
@@ -413,13 +414,18 @@ body {
     justify-content: center;
     text-decoration: none;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
-    height: 80px;
+    height: 120px;
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .client-logo:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .client-logo img {
@@ -436,7 +442,7 @@ body {
 
 /* Footer */
 .footer {
-    background: #1a1a1a;
+    background: #152235;
     color: white;
     padding: 60px 0 20px;
 }
@@ -487,7 +493,7 @@ body {
 }
 
 .footer-section ul li a:hover {
-    color: #688490;
+    color: #20C4CB;
 }
 
 .footer-bottom {
@@ -516,7 +522,7 @@ body {
         top: 100%;
         left: 0;
         width: 100%;
-        background: white;
+        background: #152235;
         flex-direction: column;
         padding: 2rem;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -647,7 +653,7 @@ body {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #333;
+    color: white;
 }
 
 /* Smooth scrolling for older browsers */
